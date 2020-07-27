@@ -43,7 +43,7 @@
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    background-attachmnet: fixed;
+    background-attachment: fixed;
     color: white;
 }
 .home-down{
@@ -77,8 +77,8 @@
 /*第二部分 about*/
 .about {
     height: 360px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     width: 100%;
 }
 .about-left{
@@ -98,4 +98,35 @@
     float: left;
     margin-top: 20px;
 
+}
+/* 第三部分 team */
+
+.team {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url(../img/03.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: whitesmoke;
+}
+.team-back{
+    padding-top: 80px;
+}
+.team-img {
+    display: flex;
+    margin: 40px auto;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.team-img-small{
+    width: 20%;
+}
+.img-four {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
