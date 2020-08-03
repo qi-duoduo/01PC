@@ -12,6 +12,7 @@
     display: flex;
     position:fixed;
     top: 0;
+    z-index: 10;
 }
 .head-right {
     width: 45%;
@@ -26,9 +27,13 @@
     text-align: center;
     list-style-type:none;
 }
-.head-left:hover {
+.head-a:hover {
     color: orange;
     cursor: pointer;
+}
+.head-a {
+    text-decoration: none;
+    color: aliceblue;
 }
 /*第一张大图  home部分*/
 .home{
@@ -82,7 +87,7 @@
     width: 100%;
 }
 .about-left{
-    width: 35%;
+    width: 500px;
     padding: 20px 0;
     margin-left: 20%;
     float: left;
@@ -92,7 +97,7 @@
     height: 396px;
 }
 .about-right{
-    width: 40%;
+    width: 500px;
     float: left;
     margin-top: 20px;
 }
@@ -112,44 +117,14 @@
 .team-top{
     padding-top: 80px;
 }
-.team-center{
+.team-center {
     position: relative;
     overflow: hidden;
     width: 1140px;
     margin: auto;
+    padding-top: 30px;
 }
-.team-img {
-    position: relative;
-    margin: 40px auto;
-    width: 100%;
-    height: 330px;
-    overflow: hidden;
-    /*width:2280px;*/
-    left: 0;
-    display: block;
-    transform: translate3d(0px, 0px, 0px);
-    transition: all 300ms ease 0s;"
-}
-.team-img:hover {
-    /*animation-play-state: paused;*/
-}
-@keyframes person {
-    0% {  margin-left: 0;  }
-    12.5% {  margin-left: -285px;  }
-    25% {  margin-left: -570px;  }
-    37.5% {  margin-left: -855px;  }
-    50% {  margin-left: -1140px;  }
-    67.5% {  left: -285px;  }
-    75% {  left: -570px;  }
-    87.5% {  left:-855px;  }
-    100% {  left:-1140px;  }
-}
-.team-img-small{
-    width: 285px;
-    height: 330px;
-    float: left;
-    list-style-type: none;
-}
+
 .img-four {
     width: 120px;
     height: 120px;
@@ -159,6 +134,7 @@
 .img-four:hover {
     background-color: orange;
 }
+
 /*第四部分 services*/
 .services {
     height: 1000px;
@@ -197,7 +173,7 @@
     background-color: orange;
 }
 .serveice-bottom{
-    height: 400px;
+    height: 426px;
     background: url("../img/04.jpg"),linear-gradient(to bottom, rgba(0,0,0,0.9),rgba(0,0,0,0.8));
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -206,22 +182,10 @@
     color: white;
 }
 .service-bottom-img{
-    margin-top: 30px;
+    width: 60%;
+    margin: 60px auto;
+    height: 200px;
     overflow: hidden;
-}
-.img-ul{
-    height: 80px;
-    width: 1140px;
-    list-style: none;
-    margin: auto;
-    overflow: hidden;
-    display: block;
-}
-.img-li{
-    margin: 25px 25px 25px 25px;
-    width: 15%;
-    height: 30px;
-    float: left;
 }
 /*倒数第三部分 portfolio*/
 .portfolio{
