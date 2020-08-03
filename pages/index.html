@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../swiper/swiper-bundle.min.css">
 </head>
 <body class="body">
     <div class="header">
         <div class="head-right">SPIRIT8</div>
         <ul style="display: flex;">
-            <li class="head-left">HOME</li>
-            <li class="head-left">ABOUT</li>
-            <li class="head-left">TEAM</li>
-            <li class="head-left">SERVICES</li>
-            <li class="head-left">PORTFOLIO</li>
-            <li class="head-left">TESTIMONIALS</li>
-            <li class="head-left">CONTACT</li>
+            <li class="head-left"><a href="#home" class="head-a">HOME</a></li>
+            <li class="head-left"><a href="#about" class="head-a">ABOUT</a></li>
+            <li class="head-left"><a href="#team" class="head-a">TEAM</a></li>
+            <li class="head-left"><a href="#services" class="head-a">SERVICES</a></li>
+            <li class="head-left"><a href="#port" class="head-a">PORTFOLIO</a></li>
+            <li class="head-left"><a href="#test" class="head-a">TESTIMONIALS</a></li>
+            <li class="head-left"><a href="#contact" class="head-a">CONTACT</a></li>
         </ul>
     </div>
-    <div class="home">
+    <div id="home" class="home">
         <div class="home-word">
             <div style="padding-top: 18%">
                 <h1>WELCOME ON <strong style="color:orange">SPIRIT8</strong></h1>
@@ -32,7 +33,7 @@
             <div class="home-down"></div>
         </div>
     </div>
-    <div class="about">
+    <div id="about" class="about">
         <div class="about-left" :align="center">
             <img class="about-img" src="../img/02.png"/>
         </div>
@@ -48,89 +49,97 @@
             </ul>
         </div>
     </div>
-    <div class="team">
+    <div id="team" class="team">
         <div class="team-top">
             <p style="font-size: 27px;margin: 0 0 0 5px;">MEET<strong style="margin-left: 10px;">OUR TEAM</strong></p>
             <div style="width: 60px;height: 4px; background-color: orange;margin: 10px auto;"></div>
             <div style="width: 40px;height:4px;background-color: rgb(122, 88, 46);margin: 10px auto;"></div>
         </div>
         <div class="team-center">
-            <ul class="team-img" >
-                <li class="team-img-small">
-                    <img class="img-four"  src="../img/team/01.jpg"/>
-                    <div>
-                        <h3>Jenn Gwapa</h3>
-                        <p>CEO / Founder</p>
-                        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+            <!--轮播图-->
+            <div class="swiper-container" style="height: 365px">
+                <div class="swiper-wrapper" style="height: 300px">
+                    <div class="swiper-slide " style="height: 300px">
+                        <img class="img-four"  src="../img/team/01.jpg"/>
+                        <div>
+                            <h3>Jenn Gwapa 1</h3>
+                            <p>CEO / Founder</p>
+                            <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                        </div>
                     </div>
-                </li>
-                <li class="team-img-small">
-                    <img class="img-four"  src="../img/team/02.jpg"/>
-                    <div>
-                        <h3>Jenn Gwapa</h3>
-                        <p>CEO / Founder</p>
-                        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                    <div class="swiper-slide" style="height: 300px">
+                        <img class="img-four"  src="../img/team/02.jpg"/>
+                        <div>
+                            <h3>Jenn Gwapa 2</h3>
+                            <p>CEO / Founder</p>
+                            <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                        </div>
                     </div>
-                </li>
-                <li class="team-img-small">
-                    <img class="img-four"  src="../img/team/03.jpg"/>
-                    <div>
-                        <h3>Jenn Gwapa</h3>
-                        <p>CEO / Founder</p>
-                        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                    <div class="swiper-slide" style="height: 300px">
+                        <img class="img-four"  src="../img/team/03.jpg"/>
+                        <div>
+                            <h3>Jenn Gwapa 3</h3>
+                            <p>CEO / Founder</p>
+                            <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                        </div>
                     </div>
-                </li>
-                <li class="team-img-small">
-                    <img class="img-four"  src="../img/team/04.jpg"/>
-                    <div>
-                        <h3>Jenn Gwapa</h3>
-                        <p>CEO / Founder</p>
-                        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                    <div class="swiper-slide" style="height: 300px">
+                        <img class="img-four"  src="../img/team/04.jpg"/>
+                        <div>
+                            <h3>Jenn Gwapa 4</h3>
+                            <p>CEO / Founder</p>
+                            <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                        </div>
                     </div>
-                </li>
-                <li class="team-img-small">
-                    <img class="img-four"  src="../img/team/04.jpg"/>
-                    <div>
-                        <h3>Jenn Gwapa</h3>
-                        <p>CEO / Founder</p>
-                        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                    <div class="swiper-slide" style="height: 300px">
+                        <img class="img-four"  src="../img/team/04.jpg"/>
+                        <div>
+                            <h3>Jenn Gwapa 5</h3>
+                            <p>CEO / Founder</p>
+                            <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                        </div>
                     </div>
-                </li>
-                <li class="team-img-small">
-                    <img class="img-four"  src="../img/team/03.jpg"/>
-                    <div>
-                        <h3>Jenn Gwapa</h3>
-                        <p>CEO / Founder</p>
-                        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                    <div class="swiper-slide" style="height: 300px">
+                        <img class="img-four"  src="../img/team/03.jpg"/>
+                        <div>
+                            <h3>Jenn Gwapa 6</h3>
+                            <p>CEO / Founder</p>
+                            <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                        </div>
                     </div>
-                </li>
-                <li class="team-img-small">
-                    <img class="img-four"  src="../img/team/02.jpg"/>
-                    <div>
-                        <h3>Jenn Gwapa</h3>
-                        <p>CEO / Founder</p>
-                        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                    <div class="swiper-slide" style="height: 300px">
+                        <img class="img-four"  src="../img/team/02.jpg"/>
+                        <div>
+                            <h3>Jenn Gwapa 7</h3>
+                            <p>CEO / Founder</p>
+                            <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                        </div>
                     </div>
-                </li>
-                <li class="team-img-small">
-                    <img class="img-four"  src="../img/team/01.jpg"/>
-                    <div>
-                        <h3>Jenn Gwapa</h3>
-                        <p>CEO / Founder</p>
-                        <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                    <div class="swiper-slide" style="height: 300px">
+                        <img class="img-four"  src="../img/team/01.jpg"/>
+                        <div>
+                            <h3>Jenn Gwapa 8</h3>
+                            <p>CEO / Founder</p>
+                            <p>Do not seek to change what has come before. Seek to create that which has not.</p>
+                        </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="ipagination1">
+                    <div class="ipagination1_1"></div>
+                    <div class="ipagination1_2"></div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="services">
+    <div id="services" class="services">
         <div class="services-top">
             <p style="padding-top: 80px;font-size: 27px">TAKE A LOOK AT <strong> OUR SERVICES</strong></p>
             <div style="width: 60px;height: 4px; background-color: orange;margin: 10px auto;"></div>
             <div style="width: 40px;height:4px;background-color: rgb(250,209,125);margin: 10px auto;"></div>
             <p style="font-size: small">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
         </div>
-        <div class="service-center">
+        <div class="service-center" >
             <ul class="service-center-four">
                 <li class="service-center-four-li">
                     <div class="four-li"></div>
@@ -155,26 +164,30 @@
             </ul>
         </div>
         <div class="serveice-bottom">
-            <div style="padding-top: 80px">
+            <div style="padding-top: 100px">
                 <p style="font-size: 27px;margin: 0 0 0 -10px;">SOME OF <strong style="margin-left: 5px;">OUR CLIENTS</strong></p>
                 <div style="width: 60px;height: 4px; background-color: orange;margin: 7px auto;"></div>
                 <div style="width: 40px;height:4px;background-color: rgb(122, 88, 46);margin: 10px auto;"></div>
             </div>
             <div class="service-bottom-img">
-                <ul class="img-ul">
-                    <li class="img-li"><img src="../img/client/01.png" /></li>
-                    <li class="img-li"><img src="../img/client/02.png" /></li>
-                    <li class="img-li"><img src="../img/client/03.png" /></li>
-                    <li class="img-li"><img src="../img/client/04.png" /></li>
-                    <li class="img-li"><img src="../img/client/05.png" /></li>
-                    <li class="img-li"><img src="../img/client/06.png" /></li>
-                    <li class="img-li"><img src="../img/client/07.png" /></li>
-                </ul>
+                <div class="swiper-container2" >
+                    <div class="swiper-wrapper" style="height: 100px">
+                        <div class="swiper-slide"><img src="../img/client/01.png" /></div>
+                        <div class="swiper-slide"><img src="../img/client/02.png" /></div>
+                        <div class="swiper-slide"><img src="../img/client/03.png" /></div>
+                        <div class="swiper-slide"><img src="../img/client/04.png" /></div>
+                        <div class="swiper-slide"><img src="../img/client/05.png" /></div>
+                        <div class="swiper-slide"><img src="../img/client/06.png" /></div>
+                        <div class="swiper-slide"><img src="../img/client/07.png" /></div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination2"></div>
+                </div>
             </div>
         </div>
 
     </div>
-    <div class="portfolio">
+    <div id="port" class="portfolio">
         <div class="portfolio-top">
             <p style="font-size: 27px;margin: 0 0 0 0 ">TAKE A LOOK AT <strong> OUR SERVICES</strong></p>
             <div style="width: 60px;height: 4px; background-color: orange;margin: 5px auto;"></div>
@@ -212,18 +225,34 @@
             </div>
         </div>
     </div>
-    <div class="textmonials">
+    <div id="test" class="textmonials">
         <div class="textmonials-top">
             <p style="font-size: 27px;margin: 0 0 0 5px;"><strong style="margin-left: 10px;">OUR CLIENTS’</strong>TESTIMONIALS</p>
             <div style="width: 60px;height: 4px; background-color: orange;margin: 10px auto;"></div>
             <div style="width: 40px;height:4px;background-color: rgb(122, 88, 46);margin: 10px auto;"></div>
         </div>
-        <div style="margin: 80px auto;text-align: center;color: aliceblue;width: 900px">
-            <p style="font-size: 16px;font-weight: 600">This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-            <p  style="font-size: 14px;margin-top: 40px"><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+        <div style="margin: 80px auto;text-align: center;color: aliceblue;width: 900px;overflow: hidden">
+            <div class="swiper-container3">
+                <div class="swiper-wrapper" style="height: 150px">
+                    <div class="swiper-slide " >
+                        <p style="font-size: 16px;font-weight: 600">This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        <p  style="font-size: 14px;margin-top: 40px"><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+                    </div>
+                    <div class="swiper-slide " >
+                        <p style="font-size: 16px;font-weight: 600">This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        <p  style="font-size: 14px;margin-top: 40px"><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+                    </div>
+                    <div class="swiper-slide " >
+                        <p style="font-size: 16px;font-weight: 600">This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                        <p  style="font-size: 14px;margin-top: 40px"><strong>Dean Martin</strong>, CEO Acme Inc.</p>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination3"></div>
+            </div>
         </div>
     </div>
-    <div class="contact">
+    <div id="contact" class="contact">
         <div class="contact-top">
             <p style="font-size: 27px;margin: 0 0 0 0 ">FEEL FREE TO <strong>CONTACT US</strong></p>
             <div style="width: 60px;height: 4px; background-color: orange;margin: 5px auto;"></div>
@@ -250,5 +279,89 @@
             </ul>
         </div>
     </div>
+    <script src="../swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var mySwiper = new Swiper ('.swiper-container', {
+            loop: false, // 循环模式选项
+            slidesPerView: 4,
+            on: {
+                slideChangeTransitionEnd: function(){
+                    console.log(this.activeIndex)
+                    if(this.activeIndex <= 0){
+                        var x = document.getElementsByClassName('ipagination1_1')
+                        for(var i = 0;i<x.length ;i++){
+                            x[i].style.background = "orange";
+                        }
+                    }else{
+//                        document.getElementsByClassName('ipagination1_2').style.background = 'orange'
+                        var x = document.getElementsByClassName('ipagination1_2')
+                        for(var i = 0;i<x.length;i++){
+                            x[i].style.background = "orange";
+                        }
+                    }
+                }
+            },
+            // 如果需要分页器
+            pagination: {
+                clickable: true,
+            }
+        });
+        var mySwiper2 = new Swiper ('.swiper-container2', {
+            loop: true, // 循环模式选项
+            slidesPerView: 5,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+                bulletClass : 'my-bullet',
+                bulletActiveClass : 'team-bullet'
+            }
+        });
+        var mySwiper3 = new Swiper ('.swiper-container3', {
+            loop: true, // 循环模式选项
+            slidesPerView: 1,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination3',
+                clickable: true,
+                bulletClass : 'my-bullet',
+                bulletActiveClass : 'team-bullet'
+            }
+        });
+    </script>
+    <style>
+        .ipagination1{
+            width: 50px;
+            display: flex;
+            height: 50px;
+            margin: auto;
+            background-color: white;
+        }
+        .ipagination1_1{
+            margin: auto;
+            width: 10px;
+            height: 10px;
+            background: red;
+        }
+        .ipagination1_2{
+            margin: auto;
+            width: 10px;
+            height: 10px;
+            background: red;
+        }
+
+        .my-bullet{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: white;
+            border-radius: 0;
+        }
+        .team-bullet {
+            background: orange;
+        }
+    </style>
 </body>
+
 </html>
