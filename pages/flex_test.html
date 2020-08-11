@@ -6,8 +6,112 @@
     <script src="../js/jquery.js"></script>
     <link type="text/css" rel="stylesheet" href="../css/flex_css.css">
     <title>Document</title>
+    <script>
+        //容器属性
+        //flex-direction
+        const flex_direction = "flex-direction"
+        var fds = ["row", "row-reverse", "column", "column-reverse"]
+        //flex-wrap
+        const flex_wrap = "flex-wrap"
+        var fws = ["nowrap", "wrap", "wrap-reverse"]
+        //justify-content
+        const justify_content = "justify-content"
+        var jcs = ["flex-start", "flex_end", "center", "space-between", "space-around"]
+        //align-items
+        const align_items = "align-items"
+        var ais = ["flex-start", "flex-end", "center", "baseline", "stretch"]
+        //align-content
+        const align_content = "align-content"
+        var acs = ["flex-start", "flex_end", "center", "space-between", "space-around", "stretch"]
+
+        //item属性(待补充)
+        $(document).ready(function () {
+            init()
+            $('input').click(function() {
+                // console.log($(this).attr('name') +' '+ $(this).val())
+                $('.item').each(function() {
+                    $(this).css("line-height", $(this).height() + "px")
+                })
+                set_css($(this).attr('name'), $(this).val())
+            })
+        })
+
+        //初始化
+        function init() {
+            createItems(10)
+            $('.item').each(function() {
+                $(this).css("background-color", randomColor())
+                $(this).css("width", random(10, 40))
+                $(this).css("height", random(10, 20))
+                $(this).css("line-height", $(this).height() + "px")
+            })
+            $('#c').append(getHtmlText(flex_direction, fds))
+            $('#c').append(getHtmlText(flex_wrap, fws))
+            $('#c').append(getHtmlText(justify_content, jcs))
+            $('#c').append(getHtmlText(align_items, ais))
+            $('#c').append(getHtmlText(align_content, acs))
+        }
+
+        //生成item 个数
+        function createItems(count) {
+            for (let i = 0; i < count; i++) {
+                $('.container').append("<label class='item'>" + (i + 1) + "</label>")
+            }
+        }
+
+        //随机概率
+        function random(min, gap) {
+            let percent = min
+            percent += Math.random() * gap
+            return percent + "%"
+        }
+
+        //根据name以及值列表生成radio列
+        function getHtmlText(name, values) {
+            var str = "<div><label>" + name + "</label>"
+            for(let i = 0; i < values.length; i++) {
+                str += "<input type='radio' name='" + name +"' value='" + values[i] + "'>" + values[i] + "</input>"
+            }
+            str += "</div>"
+            return str
+        }
+
+        //给容器设置css属性
+        function set_css(name, value) {
+            $('.container').css(name, value)
+        }
+
+        //给item设置属性
+        function set_item_css(name, value) {
+            $('.item').css(name, value)
+        }
+
+        //随机颜色
+        function randomColor(){ 
+            var r = Math.floor(Math.random()*256); 
+            var g = Math.floor(Math.random()*256); 
+            var b = Math.floor(Math.random()*256); 
+            if(r < 16){ 
+                r = "0"+r.toString(16); 
+            }else{ 
+                r = r.toString(16); 
+            } 
+            if(g < 16){ 
+                g = "0"+g.toString(16); 
+            }else{ 
+                g = g.toString(16); 
+            } 
+            if(b < 16){ 
+                b = "0"+b.toString(16); 
+            }else{ 
+                b = b.toString(16); 
+            } 
+            return "#"+r+g+b; 
+        } 
+    </script>
 </head>
 <body>
-    <div class="container">container</div>
+    <div id="c"></div>
+    <div class="container"></div>
 </body>
 </html>
